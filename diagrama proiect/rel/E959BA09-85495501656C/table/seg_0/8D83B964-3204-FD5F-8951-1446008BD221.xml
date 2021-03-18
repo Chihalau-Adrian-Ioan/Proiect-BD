@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D83B964-3204-FD5F-8951-1446008BD221" name="ARMAMENT_MILITAR">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>96795156-4220-E55F-2239-0DCB4D745A1F</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<abbreviation>MIL_EQP</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Armament_ID" id="027CEB9B-79BD-ADD2-FD08-6DB633FB8402">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>BB541CFD-011C-4814-1BC9-4E482A351AAC</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Denumire" id="A14A3E43-FE32-EAEB-7555-62DE237B53C9">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>6AE0A300-4603-1A99-8851-423292BB1D84</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_zile_achizitie" id="FBDFDB4F-7E80-D25D-14BB-FF5BF0E61077">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>1D97FAE4-FA06-9D03-755B-36470C88C5B3</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>365</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="Tip_armament" id="02212997-7DC8-DFAD-508B-D60370CEEFC6">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>56971F46-63B2-DE81-C25D-456F601EE8DE</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<constraintName>Tip_arma</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="AVION" description=""/>
+<valueDef value="CAMION" description=""/>
+<valueDef value="ECHIPAMENT_INFANTERIE" description=""/>
+<valueDef value="TANC" description=""/>
+<valueDef value="VEHICUL_BLINDAT" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descriere" id="082BD8B2-8FB7-8DF5-8002-D0725BC54E1E">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>264A052C-9801-E011-FFB5-FC304867C023</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49F0C2D9-CCE7-92D8-11DA-68A76B59776C" name="ARMAMENT_MILITAR_PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>EC0B76DD-BDE7-9139-D9C4-C4412E44421A</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="027CEB9B-79BD-ADD2-FD08-6DB633FB8402"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E89D047A-DC16-9A55-2081-BC995C75722D" name="MIL_EQP_Denumire_UN">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>61F5213C-FFB5-3ACF-C0EC-7848B66945AC</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A14A3E43-FE32-EAEB-7555-62DE237B53C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

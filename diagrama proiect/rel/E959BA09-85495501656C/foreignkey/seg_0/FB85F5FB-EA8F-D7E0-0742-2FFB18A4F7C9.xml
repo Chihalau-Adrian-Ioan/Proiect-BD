@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB85F5FB-EA8F-D7E0-0742-2FFB18A4F7C9" containerWithKeyObject="3DF2EE59-2D63-B798-1D46-9BF0CD912C7D" localFKIndex="DD7C1582-4DA4-7043-3B9D-6E2CE09DA3ED" name="MAGAZIE_MIL_EQP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>C03C9043-5244-FB7C-78C6-322A27B10206</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<referredTableLongName>ARMAMENT_MILITAR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8D83B964-3204-FD5F-8951-1446008BD221</referredTableID>
+<keyObject>49F0C2D9-CCE7-92D8-11DA-68A76B59776C</keyObject>
+<referredKeyID>49F0C2D9-CCE7-92D8-11DA-68A76B59776C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Armament_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

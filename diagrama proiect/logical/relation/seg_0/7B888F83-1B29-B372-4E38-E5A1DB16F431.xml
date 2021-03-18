@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Referinta_arme" directorySegmentName="seg_0" id="7B888F83-1B29-B372-4E38-E5A1DB16F431">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:32:15 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<sourcePk>EC0B76DD-BDE7-9139-D9C4-C4412E44421A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Comandat prin</nameOnSource>
+<nameOnTarget>Comanda</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>96795156-4220-E55F-2239-0DCB4D745A1F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>98C84FD8-E04E-2D09-F928-4B7E54542928</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

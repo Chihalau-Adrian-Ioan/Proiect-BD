@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F10D773-D8D5-719B-E015-774627AD4B4A" name="TEATRU_DE_OPERATII">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>720FCB4F-3866-28F3-EF20-F17183D6CE65</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<abbreviation>THR_OPS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Tara" id="3DB7FAA9-38C6-D78D-2DA8-DF4276933ED8">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>430D1B0B-EDEF-4DC0-ABC4-BCC81E0594AE</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<constraintName>Tara_Chk</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="not REGEXP_LIKE(Tara, &apos;[0-9 ]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_EQ_INF" id="1ED7F0B0-B432-6672-087B-9173D62BA33A">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>7CACA4B7-9523-A17D-8D55-5BDF137D68E1</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CM" id="29C68950-3FC6-DC4C-7F37-AF3E62B66E02">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>C6ACBCE9-1B89-11EF-D602-B1D5825F46B3</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_APC" id="7E90D5DF-066A-51EB-E914-00D3B4502580">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>E0D39958-E40D-AD95-5CE7-350AD5D4C324</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_TNK" id="7825B8BC-A8FA-2059-30CD-93AF8CE605EB">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>A20FDB98-86D0-5773-E787-758E18D7693C</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_AVI" id="2728647D-F2BC-E750-87BC-14F8C79A1EFA">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>73FC3833-9E8D-B22B-836D-6D382417F8D3</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9DD7745C-DDBC-623D-5829-5EE2068FECD2" name="TEATRU_DE_OPERATII_PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>2B05F778-A8C2-4986-B63F-40D7DBF9788D</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DB7FAA9-38C6-D78D-2DA8-DF4276933ED8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA4CA359-E9B4-9427-8349-985E80C226CC" name="Folosire_arme">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MIL_EQP_Armament_ID_FK" id="4E0AF3D7-A95F-0409-67C6-41FCD8908B2E">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7126FB9-9768-45F2-83ED-36B634DFAA6C" referredColumn="027CEB9B-79BD-ADD2-FD08-6DB633FB8402"/>
+</associations>
+</Column>
+<Column name="THR_OPS_Tara_FK" id="845FBEDD-1CA1-BC6C-A6F2-DCCFCF731BEC">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4E5CF57-8655-5372-477E-1847AB5C7928" referredColumn="3DB7FAA9-38C6-D78D-2DA8-DF4276933ED8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21694BAA-A11C-2E89-7FFF-85CC7D5D69FA" name="Folosire_arme_PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E0AF3D7-A95F-0409-67C6-41FCD8908B2E"/>
+<colUsage columnID="845FBEDD-1CA1-BC6C-A6F2-DCCFCF731BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="500C4E1E-E5D6-F189-2B63-09C85640BFD3" name="Folosire_arme_MIL_EQP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>4C55BA5C-2553-F547-0F30-EFBA017A3C07</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E0AF3D7-A95F-0409-67C6-41FCD8908B2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="045BBF00-E7C9-5ED6-EE7D-AA97784848C1" name="Folosire_arme_THR_OPS_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>4C55BA5C-2553-F547-0F30-EFBA017A3C07</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="845FBEDD-1CA1-BC6C-A6F2-DCCFCF731BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

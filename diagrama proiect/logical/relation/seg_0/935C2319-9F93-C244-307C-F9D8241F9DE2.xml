@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cerere_Teatru_Depozit_2" directorySegmentName="seg_0" id="935C2319-9F93-C244-307C-F9D8241F9DE2">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-08 18:18:00 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<sourcePk>2635885A-9B4D-4D6C-3CA7-2B3614BB5E91</sourcePk>
+<targetPk>92487C8E-428C-B785-71CA-3C99120B8CBB</targetPk>
+<identifying>false</identifying>
+<nameOnSource>Destinatar al</nameOnSource>
+<nameOnTarget>Trimite catre</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>976FF2F8-996A-CA5B-C3E9-35C34D73158F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>98C84FD8-E04E-2D09-F928-4B7E54542928</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

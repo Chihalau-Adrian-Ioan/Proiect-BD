@@ -1,0 +1,50 @@
+savepoint beginning_of_transaction;
+commit;
+
+set TRANSACTION NAME 'procesare_cerere';
+update magazie mag
+set mag.arme_pastrate = mag.arme_pastrate - (select ctd.bucati_cerute from cerere_teatru_depozit ctd 
+    where ctd.cerere_teatru_id = 6)
+where (mag.dep_depozit_id_fk, mag.mil_eqp_armament_id_fk) = (
+    select ctd.dep_depozit_id_fk, ctd.mil_eqp_armament_id_fk from cerere_teatru_depozit ctd
+    where ctd.cerere_teatru_id = 6);
+    
+update cerere_teatru_depozit ctd
+set ctd.data_terminarii = SYSDATE + (
+    select dep.durata_livrarii_ore from depozit dep
+    where dep.depozit_id = ctd.dep_depozit_id_fk)/24
+where ctd.cerere_teatru_id = 6;
+
+update teatru_de_operatii tops
+set tops.nr_eq_inf = tops.nr_eq_inf + (
+    select ctd.bucati_cerute from cerere_teatru_depozit ctd
+    where ctd.cerere_teatru_id = 6)
+where tops.tara = (
+    select ctd.thr_ops_tara_fk from cerere_teatru_depozit ctd
+    where ctd.cerere_teatru_id = 6);
+
+insert into achizitie_armament am (am.mil_eqp_armament_id_fk, am.dep_depozit_id_fk, am.nr_bucati, am.data_solicitarii)
+select ctd.mil_eqp_armament_id_fk, ctd.dep_depozit_id_fk, ctd.bucati_cerute, ctd.data_terminarii
+from cerere_teatru_depozit ctd
+where ctd.cerere_teatru_id = 6;
+
+update magazie mag
+set mag.arme_pastrate = mag.arme_pastrate + (
+    select ach.nr_bucati from achizitie_armament ach
+    where ach.achizitie_id = 12)
+where (mag.dep_depozit_id_fk,mag.mil_eqp_armament_id_fk) = (
+    select ach.dep_depozit_id_fk, ach.mil_eqp_armament_id_fk 
+    from achizitie_armament ach
+    where ach.achizitie_id = 12);
+
+update depozit dep
+set dep.data_ultimei_achizitii = SYSDATE + (
+    select am.nr_zile_achizitie from armament_militar am
+    where am.armament_id = (
+        select ach.mil_eqp_armament_id_fk from achizitie_armament ach
+        where ach.achizitie_id = 12))
+where dep.depozit_id = (
+    select ach.dep_depozit_id_fk from achizitie_armament ach
+    where ach.achizitie_id = 12);
+commit;
+rollback to beginning_of_transaction;

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="diagrama proiect" id="A8285F91-906A-85AC-1C49-C34DE3981B07" version="3.5">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-19 11:16:45 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A8285F91-906A-85AC-1C49-C34DE3981B07</designId>
+</OSDM_Design>

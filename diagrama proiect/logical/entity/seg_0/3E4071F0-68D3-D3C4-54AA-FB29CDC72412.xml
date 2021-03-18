@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E4071F0-68D3-D3C4-54AA-FB29CDC72412" name="MAGAZIE">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-01 18:52:06 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Magazie_ID" id="4E6BE5A0-852D-F36F-0CC1-EB79A95DFC03">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-01 18:52:12 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Depozit_ID" id="235EF961-726D-A769-04AA-0B39B0EEB200">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-01 18:59:51 UTC</createdTime>
+<generatorID>4F7DEB5E-2B4F-9FFD-F892-088F42D321AB</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<referedAttribute>D69D6927-FCD5-9948-849D-2991F4F2EC0F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_maxim_arme" id="FD19FEC2-C452-12A3-FA6F-5566B0468C76">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-01 18:54:05 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<constraintName>Maxim_non_0</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_maxim_arme!=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Arme_pastrate" id="DCB54513-1420-F596-B858-8317242B1355">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-01 18:55:07 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<constraintName>Nr_arme</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Arme_pastrate &lt;= Nr_maxim_arme"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Armament_ID" id="B39E8F05-8021-2EFB-F810-EC3951378F6A">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-06 13:37:02 UTC</createdTime>
+<generatorID>C03C9043-5244-FB7C-78C6-322A27B10206</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<referedAttribute>BB541CFD-011C-4814-1BC9-4E482A351AAC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="10CCFB24-0150-D6F3-72F5-BAB9CACB1F54" name="Magazine PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-01 18:52:27 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4E6BE5A0-852D-F36F-0CC1-EB79A95DFC03</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

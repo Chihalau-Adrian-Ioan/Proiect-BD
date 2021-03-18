@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TEATRU_DE_OPERATII" directorySegmentName="seg_0" id="8F9C319F-483F-2B14-6649-4520CDBB81C7">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NR_AVI" id="282EAF61-03AA-33D1-6B87-81C216920982">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="Tara" id="6BF9A3AF-8715-D239-52DD-4D8ECCF31E11">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_APC" id="91619D64-2F97-2866-076A-D97F758E9040">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NR_TNK" id="D97CAFDF-762E-FA75-999D-498A78FBA80F">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NR_CM" id="EF47365A-84EB-0E4D-B6C0-3B67910130C7">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="Theatre_ID" id="F6F12577-7C59-25A7-580B-586CCBC37A56">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_EQ_INF" id="F8B8F1C0-749E-E8FD-FDEB-16441B7291E8">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TEATRU_DE_OPERATII_PK" id="0209060E-6F97-4554-54C4-61E937AB55BC">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 11:44:31 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

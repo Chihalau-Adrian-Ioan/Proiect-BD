@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ACHIZITIE_ARMAMENT" directorySegmentName="seg_0" id="EE905DF3-AED2-DC78-6248-30C263511BFE">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Nr_bucati" id="42D9A903-1040-B7EE-92CE-59E170463CA0">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Achizitie_ID" id="5DA0A629-E451-9C43-FEA6-1C5E72025C81">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MIL_EQP_Armament_ID_FK" id="9C7EDCC3-2D55-0C62-7AE5-256C348DF902">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEP_Depozit_ID_FK" id="D0B80CF8-1971-BFA0-9D7D-E0A33BC0F3C3">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data_solicitarii" id="D4E913AE-3BBD-0EA2-8CE7-3DEF5EFB776A">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ACHIZITIE_ARMAMENT_MIL_EQP_FK" id="4E699229-0000-285E-385A-1647B5BC55EC">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ACHIZITIE_ARMAMENT_DEP_FK" id="E174EE11-DC1F-D0ED-1A02-F53E14D6B850">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ACHIZITIE_ARMAMENT_PK" id="97111041-A992-6C45-D72A-273CE48E0B1C">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

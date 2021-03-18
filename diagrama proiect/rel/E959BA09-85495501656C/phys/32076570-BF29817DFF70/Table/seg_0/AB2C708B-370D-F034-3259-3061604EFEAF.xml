@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CERERE_TEATRU_DEPOZIT" directorySegmentName="seg_0" id="AB2C708B-370D-F034-3259-3061604EFEAF">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MIL_EQP_Armament_ID_FK" id="01D330E9-E698-D291-97BC-8699F8B10A0D">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="THR_OPS_Tara_FK" id="39680499-816E-74DD-D437-340E6FDBAFF5">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Bucati_cerute" id="5879C76E-4203-1535-500F-58E96D870BB4">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Cerere_Teatru_ID" id="8756FAEA-81B4-447B-36D5-E599BF3F6BB9">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data_trimiterii" id="B6BEA696-D1E2-2B5C-9807-C186874D2F57">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data_terminarii" id="D0DF8214-FBE9-C11D-1935-64F20E24AA91">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEP_Depozit_ID_FK" id="E67ACC33-CBA2-847D-B121-EA6D8CF3146C">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="WPN_DMD_DEP_FK" id="35A531BE-AC2B-45EB-B381-37BE400ACCA9">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="WPN_DMD_MIL_EQP_FK" id="CB0C8DA6-CBAE-6962-88BD-D259B4F41732">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="WPN_DMD_THR_OPS_FK" id="D4E2A709-2245-778E-C59F-B0D66BA64E02">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CERERE_TEATRU_DEPOZIT_PK" id="6D39E23C-3ABC-5678-9EA0-BC5259801253">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

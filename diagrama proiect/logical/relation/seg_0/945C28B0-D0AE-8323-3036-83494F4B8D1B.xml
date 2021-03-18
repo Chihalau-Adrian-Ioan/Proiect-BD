@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Info_depozit" directorySegmentName="seg_0" id="945C28B0-D0AE-8323-3036-83494F4B8D1B">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-20 11:12:49 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<sourcePk>2635885A-9B4D-4D6C-3CA7-2B3614BB5E91</sourcePk>
+<dominantRole>976FF2F8-996A-CA5B-C3E9-35C34D73158F</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>976FF2F8-996A-CA5B-C3E9-35C34D73158F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>EF759E76-49C1-0D67-1807-A7C604FF2EC7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Achizitie_arme" directorySegmentName="seg_0" id="BD583011-0A77-09F9-0991-EE4DD91B51B9">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:35:03 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<sourcePk>EC0B76DD-BDE7-9139-D9C4-C4412E44421A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Obtinut prin</nameOnSource>
+<nameOnTarget>Obtine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>96795156-4220-E55F-2239-0DCB4D745A1F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CF74AABA-050E-93A4-C14A-714513634486</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

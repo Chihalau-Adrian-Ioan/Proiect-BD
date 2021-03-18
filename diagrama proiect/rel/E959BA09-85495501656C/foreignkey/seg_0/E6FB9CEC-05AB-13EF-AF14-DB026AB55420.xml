@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E6FB9CEC-05AB-13EF-AF14-DB026AB55420" containerWithKeyObject="AB2C708B-370D-F034-3259-3061604EFEAF" localFKIndex="35A531BE-AC2B-45EB-B381-37BE400ACCA9" name="WPN_DMD_DEP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>935C2319-9F93-C244-307C-F9D8241F9DE2</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<referredTableLongName>DEPOZIT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9A61CE4E-7DCA-836D-E507-8ED97FAADEA3</referredTableID>
+<keyObject>03052C47-E8A1-C96B-859E-C37FF5FD20E5</keyObject>
+<referredKeyID>03052C47-E8A1-C96B-859E-C37FF5FD20E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Depozit_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

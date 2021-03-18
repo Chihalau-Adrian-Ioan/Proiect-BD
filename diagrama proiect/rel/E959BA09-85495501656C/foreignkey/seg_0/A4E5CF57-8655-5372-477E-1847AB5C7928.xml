@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A4E5CF57-8655-5372-477E-1847AB5C7928" containerWithKeyObject="CA4CA359-E9B4-9427-8349-985E80C226CC" localFKIndex="045BBF00-E7C9-5ED6-EE7D-AA97784848C1" name="Folosire_arme_THR_OPS_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>4C55BA5C-2553-F547-0F30-EFBA017A3C07</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<referredTableLongName>TEATRU_DE_OPERATII</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8F10D773-D8D5-719B-E015-774627AD4B4A</referredTableID>
+<keyObject>9DD7745C-DDBC-623D-5829-5EE2068FECD2</keyObject>
+<referredKeyID>9DD7745C-DDBC-623D-5829-5EE2068FECD2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Tara</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB2C708B-370D-F034-3259-3061604EFEAF" name="CERERE_TEATRU_DEPOZIT">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>98C84FD8-E04E-2D09-F928-4B7E54542928</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<abbreviation>WPN_DMD</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cerere_Teatru_ID" id="8756FAEA-81B4-447B-36D5-E599BF3F6BB9">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>DA27A92A-6AA6-E823-0DF1-E275FD75EA49</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="THR_OPS_Tara_FK" id="39680499-816E-74DD-D437-340E6FDBAFF5">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>B04FB4BD-507F-8F56-F86E-6E0FD01AB8DE</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F2274D3-870C-C645-4371-A3410581BE0D" referredColumn="3DB7FAA9-38C6-D78D-2DA8-DF4276933ED8"/>
+</associations>
+</Column>
+<Column name="DEP_Depozit_ID_FK" id="E67ACC33-CBA2-847D-B121-EA6D8CF3146C">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>E370CA47-FE29-358A-052F-A2FD5A929E3F</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6FB9CEC-05AB-13EF-AF14-DB026AB55420" referredColumn="B71F8364-EABE-CC73-FDF7-314F133EF5C4"/>
+</associations>
+</Column>
+<Column name="MIL_EQP_Armament_ID_FK" id="01D330E9-E698-D291-97BC-8699F8B10A0D">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>6D3481A0-4B05-062C-D4DC-78AFE20FFA6A</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65D35BFA-8D50-A52C-7C25-229602A338FA" referredColumn="027CEB9B-79BD-ADD2-FD08-6DB633FB8402"/>
+</associations>
+</Column>
+<Column name="Bucati_cerute" id="5879C76E-4203-1535-500F-58E96D870BB4">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>40F77B87-31D2-9E68-26E3-4D945C27A38D</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_trimiterii" id="B6BEA696-D1E2-2B5C-9807-C186874D2F57">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>16249D3D-3B01-D983-6CB2-5D2291B69C44</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_terminarii" id="D0DF8214-FBE9-C11D-1935-64F20E24AA91">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>89539DCC-FF6C-0DCF-725E-CE98AB344467</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<constraintName>Demand_Date_Chk</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Data_terminarii &gt; Data_trimiterii"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D39E23C-3ABC-5678-9EA0-BC5259801253" name="CERERE_TEATRU_DEPOZIT_PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>92487C8E-428C-B785-71CA-3C99120B8CBB</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8756FAEA-81B4-447B-36D5-E599BF3F6BB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4E2A709-2245-778E-C59F-B0D66BA64E02" name="WPN_DMD_THR_OPS_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>C8BFF81B-0AAE-1F5E-5910-F6B266A2D5F5</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39680499-816E-74DD-D437-340E6FDBAFF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35A531BE-AC2B-45EB-B381-37BE400ACCA9" name="WPN_DMD_DEP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>935C2319-9F93-C244-307C-F9D8241F9DE2</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E67ACC33-CBA2-847D-B121-EA6D8CF3146C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB0C8DA6-CBAE-6962-88BD-D259B4F41732" name="WPN_DMD_MIL_EQP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>7B888F83-1B29-B372-4E38-E5A1DB16F431</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01D330E9-E698-D291-97BC-8699F8B10A0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

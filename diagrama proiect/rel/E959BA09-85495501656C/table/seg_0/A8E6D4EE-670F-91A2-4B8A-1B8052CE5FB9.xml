@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8E6D4EE-670F-91A2-4B8A-1B8052CE5FB9" name="DETALII_DEPOZIT">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-20 11:13:33 UTC</createdTime>
+<generatorID>EF759E76-49C1-0D67-1807-A7C604FF2EC7</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<abbreviation>DEP_DET</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEP_Depozit_ID_FK" id="951EAA09-F8DB-DC99-91C7-AF6D4F431FF7">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-20 11:13:33 UTC</createdTime>
+<generatorID>2D81A092-496A-189E-AB66-436A1524C34C</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CECF2123-BF8B-2F21-8657-28EC76A780F2" referredColumn="B71F8364-EABE-CC73-FDF7-314F133EF5C4"/>
+</associations>
+</Column>
+<Column name="Descriere" id="F664228B-3DC0-BB77-937E-3D53AEEDB925">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-20 11:13:33 UTC</createdTime>
+<generatorID>D46F3443-9065-ADA6-79F8-8E2351EACD95</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D7DD948-BFE3-4310-3228-19F947978270" name="DETALII_DEPOZIT_PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-20 11:13:33 UTC</createdTime>
+<generatorID>75A8A9F2-B2EF-5C48-B3BA-D0DFF1AF2B83</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="951EAA09-F8DB-DC99-91C7-AF6D4F431FF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59774308-7C06-6562-9BF6-356AC582E429" name="DEP_DET_DEP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-20 11:13:33 UTC</createdTime>
+<generatorID>945C28B0-D0AE-8323-3036-83494F4B8D1B</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="951EAA09-F8DB-DC99-91C7-AF6D4F431FF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,36 @@
+Nume student: Chihalău Adrian-Ioan
+Grupa: 1306B
+Titlu proiect: Logistică echipament depozite militare din România
+Descriere:
+* Armata romana se confrunta in diverse teatre de operatii cu multe pericole(teroristi, mentinere a pacii, operatiuni militare de amploare cu alte forte NATO). In mod normal, 
+fiecare are la dispozitie un numar de achipamente de infanterie, camioane, vechicule blindate, tancuri si avioane, plus tara in care isi desfasoara operatiunile militare. Pe parcursul lor,
+acestea se vor consuma, iar la un moment dat, este necesar ca comandamentul teatrului de operatii sa ceara armament nou  din depozite din Romania in lipsa acestuia. De precizat este ca 
+exista un singur teatru de operatii pe tara.
+ 
+* Armamentul este produs ori importat, din diverse tari ale lumii. Pentru ca este greu sa ne dam seama doar din id-ul unui armament care este diferenta dintre ele 
+(de exemplu, sa fie 2 variante ale unei pusti de asalt, dar cu acelasi nume pentru simplitate), toate vor avea un nume unic. Pentru mai multe detalii despre un echipament, acesta poate 
+avea o descriere succinta(maxim 300 litere). Fiecare armament are un timp diferit de achizitie, exprimat in zile, si consta in cat timp unul sau mai multe armamente de acest model vor fi 
+obtinute.
+
+* Fiecare teatru de operatii foloseste un anumit set de armament, in functie de necesitati; de exemplu, daca este un teatru de operatiune de mentinere a pacii, nu sunt necesare modelele de 
+avioane sau tancuri, sau daca in tara in care se afla teatrul nu exista un conflict major, sunt folosite armamente de model vechi.
+
+* Echipamentul militar este plasat in depozite militare din diverse locatii din tara, fiecare detinand numai un singur tip de armament. Fiecare depozit are la dispozitie mai multe magazii 
+pentru stocarea mai multor modele de armament de acelasi tip. De exemplu intr-un depozit de echipament de infanterie, aflat in localitatea Campulung Moldovenesc, exista 3 magazii:
+unul pentru pusti de asalt, altul pentru grenazi fumigene, si ultimul pentru piese de artilerie grea. Fiecare depozit va fi capabil sa trimita tot ce este necesar in toate teatrele de
+operatiuni intr-un numar de ore, pentru ca trimiterea armamentului intr-un timp cat mai scurt este crucial in operatiunile militare. De asemenea, depozitul tine in evidenta si data ultimei
+livrari primite prin intermediul achizitiilor cerute de acesta.
+
+* Fiecare magazie detine un numar maxim de armament(cat permite lazile de echipament infanterie, hangarele de avioane, depozitele de tancuri, etc). Astfel se tine cont si de numarul curent 
+de arme in acesta, pentru a fi livrate mai tarziu in teatrele de operatiune ale armatei romane si pentru ca depozitele sa achizitioneze numarul lipsa de armament pentru a-si realimenta 
+rezervele.
+
+* Depozitele vor comanda armament, atunci cand este necesara completarea rezervelor din depozite(inclusiv in momentul in care un teatru a cerut si primit din depozit armament lipsa).
+Achizitia cuprinde id-ul armamentului lipsa, id-ul depozitului expeditor, numarul de bucati de achizitionat si data solicitarii(este mai mare sau egala cu data curenta din calendar). 
+Orice comanda indeplinita va determina actualizarea automata a numarului de bucati pastrate in magazia depozitului care detine echipamentul. Se verifica inainte de a trimite comanda daca
+armamentul cerut este pastrat efectiv intr-una din magaziile depozitului expeditor.
+
+
+* Toate comenzile din teatrele de operatiune catre depozite contin id-ul armamentului lipsa sau consumat, id-ul depozitului de unde se cere armamentul,numarul de bucati cerute,
+data_trimiterii(fiind ziua curenta in care s-a facut comanda), data terminarii si numele tarii in care teatrul de operatiuni este prezent si in care comandamentul a facut cererea.
+Data terminarii este initial necunoscuta si va fi completata de indata ce a ajuns echipamentul din depozit, fiind data trimiterii + timpul de transport al materialelor din depozit.

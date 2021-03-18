@@ -1,0 +1,14 @@
+drop table ACHIZITIE_ARMAMENT cascade constraints;
+drop table armament_militar cascade constraints;
+drop table cerere_teatru_depozit cascade constraints;
+drop table depozit cascade constraints;
+drop table detalii_depozit cascade constraints;
+drop table magazie cascade constraints;
+drop table folosire_arme cascade CONSTRAINTS;
+drop table teatru_de_operatii cascade constraints;
+
+drop sequence ACHIZITIE_ARMAMENT_ACHIZITIE_I;
+drop sequence DEP_DEPOZIT_ID_SEQ;
+drop sequence MAGAZIE_MAGAZIE_ID_SEQ;
+drop sequence MIL_EQP_ARMAMENT_ID_SEQ;
+drop sequence WPN_DMD_CERERE_TEATRU_ID_SEQ;

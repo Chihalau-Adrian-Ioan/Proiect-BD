@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A61CE4E-7DCA-836D-E507-8ED97FAADEA3" name="DEPOZIT">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>976FF2F8-996A-CA5B-C3E9-35C34D73158F</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<abbreviation>DEP</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Depozit_ID" id="B71F8364-EABE-CC73-FDF7-314F133EF5C4">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>D69D6927-FCD5-9948-849D-2991F4F2EC0F</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Locatie" id="BDEF7E82-BDFA-4E6E-2C34-8957B746534E">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>DBB67265-F235-028F-5925-2452680E596C</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tip_depozitat" id="F2380166-7B3A-1EBC-2025-A5BD325EB0FE">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>2942A0E1-548B-C5D4-50F9-04705E4871E0</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<constraintName>Tip_pastrat</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="AVION" description=""/>
+<valueDef value="CAMION" description=""/>
+<valueDef value="ECHIPAMENT_INFANTERIE" description=""/>
+<valueDef value="TANC" description=""/>
+<valueDef value="VEHICUL_BLINDAT" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Durata_livrarii_ore" id="B8C0FB26-EDB2-2269-9E11-1FF67CE2B878">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>A22B9258-3B6F-6425-8BC1-713F583FD58F</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Ultimei_Achizitii" id="01958DD0-EDB6-086E-3D3F-29760E2FA1BF">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>8189B58B-A278-2344-C7EA-15CD68E7CC4A</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03052C47-E8A1-C96B-859E-C37FF5FD20E5" name="DEPOZIT_PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>2635885A-9B4D-4D6C-3CA7-2B3614BB5E91</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B71F8364-EABE-CC73-FDF7-314F133EF5C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

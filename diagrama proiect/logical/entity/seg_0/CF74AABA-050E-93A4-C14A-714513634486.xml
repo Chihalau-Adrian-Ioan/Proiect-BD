@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CF74AABA-050E-93A4-C14A-714513634486" name="ACHIZITIE_ARMAMENT">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-09 19:48:21 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Achizitie_ID" id="506BE4B1-22B6-BDEB-946D-25C2B3B8CED3">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-09 19:51:51 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Armament_ID" id="C8423DD9-EA58-0B9D-2C3B-E5A673669530">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:35:03 UTC</createdTime>
+<generatorID>BD583011-0A77-09F9-0991-EE4DD91B51B9</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<referedAttribute>BB541CFD-011C-4814-1BC9-4E482A351AAC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Depozit_ID" id="0548A110-198B-98CC-0E50-54C30582DEFB">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-09 20:19:36 UTC</createdTime>
+<generatorID>2E4C347B-114C-A886-AEB5-80CB825D9A58</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<referedAttribute>D69D6927-FCD5-9948-849D-2991F4F2EC0F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_bucati" id="11214C92-F721-9B85-1F95-0BF0AD1C49F2">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-10 07:58:49 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_solicitarii" id="BF65B13F-1D40-4E68-89E9-3FD2E7DCB3DE">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-10 07:19:51 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="526F92EA-F4ED-F5C9-2187-FE3682F24A4D" name="ACHIZITIE_ARMAMENT PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-09 19:52:01 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>506BE4B1-22B6-BDEB-946D-25C2B3B8CED3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

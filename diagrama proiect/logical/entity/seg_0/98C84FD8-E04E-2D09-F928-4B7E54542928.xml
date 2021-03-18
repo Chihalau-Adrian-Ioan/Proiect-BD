@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98C84FD8-E04E-2D09-F928-4B7E54542928" name="CERERE_TEATRU_DEPOZIT">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-29 08:24:09 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>WPN_DMD</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cerere_Teatru_ID" id="DA27A92A-6AA6-E823-0DF1-E275FD75EA49">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-29 08:24:09 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tara" id="B04FB4BD-507F-8F56-F86E-6E0FD01AB8DE">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-06 10:57:48 UTC</createdTime>
+<generatorID>C8BFF81B-0AAE-1F5E-5910-F6B266A2D5F5</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<referedAttribute>430D1B0B-EDEF-4DC0-ABC4-BCC81E0594AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Armament_ID" id="6D3481A0-4B05-062C-D4DC-78AFE20FFA6A">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:32:15 UTC</createdTime>
+<generatorID>7B888F83-1B29-B372-4E38-E5A1DB16F431</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<referedAttribute>BB541CFD-011C-4814-1BC9-4E482A351AAC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Depozit_ID" id="E370CA47-FE29-358A-052F-A2FD5A929E3F">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-10 10:25:23 UTC</createdTime>
+<generatorID>935C2319-9F93-C244-307C-F9D8241F9DE2</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<referedAttribute>D69D6927-FCD5-9948-849D-2991F4F2EC0F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Bucati_cerute" id="40F77B87-31D2-9E68-26E3-4D945C27A38D">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-29 08:24:09 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_trimiterii" id="16249D3D-3B01-D983-6CB2-5D2291B69C44">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-29 08:24:09 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_terminarii" id="89539DCC-FF6C-0DCF-725E-CE98AB344467">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-29 08:24:09 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<constraintName>Demand_Date_Chk</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Data_terminarii &gt; Data_trimiterii"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92487C8E-428C-B785-71CA-3C99120B8CBB" name="WEAPON_REQUEST PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-29 08:24:09 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DA27A92A-6AA6-E823-0DF1-E275FD75EA49</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

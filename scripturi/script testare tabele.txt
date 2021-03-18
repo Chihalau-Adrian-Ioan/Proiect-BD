@@ -1,0 +1,454 @@
+---TESTE ARMAMENT_MILITAR
+--afisare arme care au o descriere
+SELECT
+    *
+FROM
+    armament_militar
+WHERE
+    descriere IS NOT NULL;
+
+--afisare arme care nu au o descriere
+SELECT
+    *
+FROM
+    armament_militar
+WHERE
+    descriere IS NULL;
+
+--afisare armament de tip echipament de infanterie valabile pentru armata romana
+SELECT
+    a.*
+FROM
+    armament_militar a
+WHERE
+    a.tip_armament = 'ECHIPAMENT_INFANTERIE';
+
+--afisare armament de tip camion valabile pentru armata romana
+SELECT
+    a.*
+FROM
+    armament_militar a
+WHERE
+    a.tip_armament = 'CAMION';
+
+--afisare armament de tip vehicul_blindat valabile pentru armata romana
+SELECT
+    a.*
+FROM
+    armament_militar a
+WHERE
+    a.tip_armament = 'VEHICUL_BLINDAT';
+
+--afisare armament de tip tanc valabile pentru armata romana
+SELECT
+    a.*
+FROM
+    armament_militar a
+WHERE
+    a.tip_armament = 'TANC';
+
+--afisare armament de tip AVION valabile pentru armata romana
+SELECT
+    a.*
+FROM
+    armament_militar a
+WHERE
+    a.tip_armament = 'AVION';
+
+--afisare numar de modele de fiecare tip echipament folosite de armata romana
+SELECT
+    a.tip_armament,
+    COUNT(a.tip_armament) "Numar de modele"
+FROM
+    armament_militar a
+GROUP BY
+    a.tip_armament;
+
+--actualizare descriere pentru tancurile M1 ca fiind tancuri americane
+UPDATE armament_militar
+SET
+    descriere = 'Tanc american'
+WHERE
+    denumire LIKE '%M1%'
+    AND tip_armament = 'TANC';
+
+
+
+--TESTE DEPOZIT
+--afisare numar de magazii pentru fiecare depozit
+SELECT
+    a.locatie,
+    a.tip_depozitat,
+    COUNT(b.dep_depozit_id_fk) "Numar magazii"
+FROM
+    depozit  a,
+    magazie  b
+WHERE
+    b.dep_depozit_id_fk = a.depozit_id
+GROUP BY
+    a.locatie,
+    a.tip_depozitat;
+
+--afisare numarul disponibil de armament pentru fiecare depozit
+SELECT
+    a.locatie,
+    a.tip_depozitat,
+    SUM(b.arme_pastrate) "Capacitate disponibila"
+FROM
+    depozit  a,
+    magazie  b
+WHERE
+    b.dep_depozit_id_fk = a.depozit_id
+GROUP BY
+    a.locatie,
+    a.tip_depozitat;
+
+--afisare capacitate maxima arme pentru fiecare depozit
+SELECT
+    a.locatie,
+    a.tip_depozitat,
+    SUM(b.nr_maxim_arme) "Armament total"
+FROM
+    depozit  a,
+    magazie  b
+WHERE
+    b.dep_depozit_id_fk = a.depozit_id
+GROUP BY
+    a.locatie,
+    a.tip_depozitat;
+
+--schimbare tip de armament pastrat in depozit pentru cele de camioane in vehicule blindate
+UPDATE depozit
+SET
+    tip_depozitat = 'VEHICUL_BLINDAT'
+WHERE
+    tip_depozitat = 'CAMION';
+
+--stergere depozite care nu au nicio magazie(se verifica si foreign key din achizitie armament)
+DELETE FROM depozit dep
+WHERE
+    (
+        SELECT
+            COUNT(*)
+        FROM
+            magazie mag
+        WHERE
+            mag.dep_depozit_id_fk = dep.depozit_id
+    ) = 0;
+
+
+--TESTE TEATRU_DE_OPERATII
+--afisare teatre de operatii care au macar un avion
+SELECT
+    *
+FROM
+    teatru_de_operatii
+WHERE
+    nr_avi != 0;
+
+--afisare teatre de operatii care au macar un vehicul blindat
+SELECT
+    *
+FROM
+    teatru_de_operatii
+WHERE
+    nr_cm != 0;
+
+--afisare teatre de operatii care au macar un tanc
+SELECT
+    *
+FROM
+    teatru_de_operatii
+WHERE
+    nr_tnk != 0;
+
+--afisare teatre de operatii care au mai mult de 200 echipamente infanterie
+SELECT
+    *
+FROM
+    teatru_de_operatii
+WHERE
+    nr_eq_inf >= 200;
+
+
+
+
+--TESTE CERERE_TEATRU_DEPOZIT
+--afisarea detaliilor  tuturor cererilor
+SELECT
+    *
+FROM
+    cerere_teatru_depozit;
+
+--actualizare date de terminare a cererilor teatru-depozit
+UPDATE cerere_teatru_depozit ctd
+SET
+    ctd.data_terminarii = ctd.data_trimiterii + (
+        SELECT
+            dep.durata_livrarii_ore
+        FROM
+            depozit dep
+        WHERE
+            dep.depozit_id = ctd.dep_depozit_id_fk
+    ) / 24;
+
+
+
+--TESTE MAGAZIE
+--afisare id-ul depozitului in care se afla, armamentul detinut si numarul lor, si capacitatea ramasa a magaziilor
+SELECT
+    a.dep_depozit_id_fk,
+    b.denumire,
+    a.arme_pastrate,
+    a.nr_maxim_arme
+FROM
+    magazie           a,
+    armament_militar  b
+WHERE
+    b.armament_id = a.mil_eqp_armament_id_fk;
+
+--stergerea magaziilor ce depozita armament care nu este de tipul specificat in depozit
+DELETE FROM magazie mag
+WHERE
+    mag.mil_eqp_armament_id_fk = (
+        SELECT
+            arm.armament_id
+        FROM
+            armament_militar arm
+        WHERE
+                mag.mil_eqp_armament_id_fk = arm.armament_id
+            AND arm.tip_armament != (
+                SELECT
+                    dep.tip_depozitat
+                FROM
+                    depozit dep
+                WHERE
+                    dep.depozit_id = mag.dep_depozit_id_fk
+            )
+    );
+
+--actualizare numar de armament in magazii in functie de cererile din teatrele de operatii
+UPDATE magazie mag
+SET
+    mag.arme_pastrate = mag.arme_pastrate - (
+        SELECT
+            SUM(ctd.bucati_cerute)
+        FROM
+            cerere_teatru_depozit ctd
+        WHERE
+                ctd.dep_depozit_id_fk = mag.dep_depozit_id_fk
+            AND ctd.mil_eqp_armament_id_fk = mag.mil_eqp_armament_id_fk
+    );
+
+--actualizare numar de armament in magazii in functie de achizitiile curente
+UPDATE magazie mag
+SET
+    mag.arme_pastrate = mag.arme_pastrate + (
+        SELECT
+            SUM(aa.nr_bucati)
+        FROM
+            achizitie_armament aa
+        WHERE
+                aa.dep_depozit_id_fk = mag.dep_depozit_id_fk
+            AND aa.mil_eqp_armament_id_fk = mag.mil_eqp_armament_id_fk
+    );
+
+
+--TESTE ACHIZITIE_ARMAMENT
+--stergere achizitii care nu sunt valide(id-ul armamentului sau id-ul depozitului nu exista,
+--sau armamentul cerut nu este de tipul pastrat in depozit)
+DELETE FROM achizitie_armament aa
+WHERE
+    (
+        SELECT
+            COUNT(*)
+        FROM
+            armament_militar am
+        WHERE
+            am.armament_id = aa.mil_eqp_armament_id_fk
+    ) = 0
+    OR (
+        SELECT
+            COUNT(*)
+        FROM
+            depozit dep
+        WHERE
+            dep.depozit_id = aa.dep_depozit_id_fk
+    ) = 0
+    OR (
+        SELECT
+            am.tip_armament
+        FROM
+            armament_militar am
+        WHERE
+            am.armament_id = aa.mil_eqp_armament_id_fk
+    ) != (
+        SELECT
+            dep.tip_depozitat
+        FROM
+            depozit dep
+        WHERE
+            dep.depozit_id = aa.dep_depozit_id_fk
+    );
+
+--TESTE FOLOSIRE_ARME
+--afisare id-ul si denumirea armamentului folosit in teatrul de operatii din Siria
+select arm.armament_id ,arm.denumire 
+from armament_militar arm
+where arm.armament_id in 
+    (
+        select fol.mil_eqp_armament_id_fk 
+        from folosire_arme fol
+        where fol.thr_ops_tara_fk = 'Siria'
+    );
+
+--stergere cereri in care teatrele de operatii nu folosesc armamentul care este comandat
+delete from cerere_teatru_depozit
+where (mil_eqp_armament_id_fk, thr_ops_tara_fk) not in
+(
+    select * from folosire_arme
+);
+
+
+--TRANZACTIE
+DECLARE
+    armament_magazie_id  INTEGER;
+    magazie_depozit_id   INTEGER;
+    buc_cerute           INTEGER;
+    dur_ore_livrare      INTEGER;
+    dur_zile_achizitie   INTEGER;
+    data_inc_achizitie   DATE;
+BEGIN
+--are loc un accident intre 2 avioane aliate in Afganistan; se consuma 2 unitati de avioane
+        UPDATE teatru_de_operatii t_ops
+    SET
+        t_ops.nr_avi = t_ops.nr_avi - 2
+    WHERE
+        t_ops.tara = 'Afganistan';
+    
+--in urma accidentului de aviatie, se adauga o noua cerere de in hangarele de avioane din Mihail Kogalniceanu, cu id-ul 3;
+--daca exista deja o cerere din depozit, se mareste cererea cu 2 bucati.
+        UPDATE cerere_teatru_depozit
+    SET
+        bucati_cerute = bucati_cerute + 2
+    WHERE
+            dep_depozit_id_fk = 3
+        AND thr_ops_tara_fk = 'Afganistan';
+
+    INSERT INTO cerere_teatru_depozit (
+        dep_depozit_id_fk,
+        mil_eqp_armament_id_fk,
+        bucati_cerute,
+        data_trimiterii,
+        thr_ops_tara_fk
+    ) VALUES (
+        3,
+        1,
+        2,
+        sysdate,
+        'Afganistan'
+    );
+
+--scadem cantitatea de avioane de ID 1 din hangarul(magazia) cu ID 3 cu cantitatea din cerere
+        UPDATE magazie mag
+    SET
+        mag.arme_pastrate = mag.arme_pastrate - (
+            SELECT
+                ctd.bucati_cerute
+            INTO buc_cerute
+            FROM
+                cerere_teatru_depozit ctd
+            WHERE
+                    mag.dep_depozit_id_fk = ctd.dep_depozit_id_fk
+                AND mag.mil_eqp_armament_id_fk = ctd.mil_eqp_armament_id_fk
+                AND ctd.thr_ops_tara_fk = 'Afganistan'
+        );
+
+    BEGIN
+        SELECT
+            dep.durata_livrarii_ore
+        INTO dur_ore_livrare
+        FROM
+            depozit dep
+        WHERE
+                dep.depozit_id = ctd.dep_depozit_id_fk
+            AND ctd.thr_ops_tara_fk = 'Afganistan'
+            AND ( ctd.dep_depozit_id_fk,
+                  ctd.armament_id ) = (
+                SELECT
+                    mag.dep_depozit_id_fk,
+                    mag.mil_eqp_armament_id_fk
+                INTO
+                    magazie_depozit_id,
+                    armament_magazie_id
+                FROM
+                    magazie mag
+                WHERE
+                    mag.dep_depozit_id_fk = dep.depozit_id
+            );
+
+    END;
+        
+--apoi actualizam timpul de terminare al livrarii in cerere
+        UPDATE cerere_teatru_depozit ctd
+    SET
+        ctd.data_terminarii = ctd.data_trimiterii + dur_ore_livrare / 24
+    WHERE
+            ctd.mil_eqp_armament_id_fk = armament_magazie_id
+        AND ctd.dep_depozit_id_fk = magazie_depozit_id
+        AND ctd.thr_ops_tara_fk = 'Afganistan';
+    
+-- acum va trebui sa realimentam rezerva livrata din hangarul de avioane;
+-- trimitem astfel o cerere de achizitie_echipament
+        INSERT INTO achizitie_armament (
+        mil_eqp_armament_id_fk,
+        dep_depozit_id_fk,
+        nr_bucati,
+        data_solicitarii
+    ) VALUES (
+        armament_magazie_id,
+        magazie_depozit_id,
+        buc_cerute,
+        sysdate
+    );
+    
+-- apoi aceasta determina achizitionarea bucatilor cerute de catre hangar,
+--in timpul dat de tipul armamentului
+        BEGIN
+        SELECT
+            am.nr_zile_achizitie
+        INTO dur_zile_achizitie
+        FROM
+            armament_militar am
+        WHERE
+            am.armament_id = armament_magazie_id;
+
+    END;
+
+    UPDATE magazie mag
+    SET
+        mag.arme_pastrate = mag.arme_pastrate + buc_cerute
+    WHERE
+            mag.dep_depozit_id_fk = magazie_depozit_id
+        AND mag.mil_eqp_armament_id_fk = armament_magazie_id;
+    
+-- actualizam data ultimei achizitii din depozitul ce a comandat
+        BEGIN
+        SELECT
+            aa.data_solicitarii
+        INTO data_inc_achizitie
+        FROM
+            achizitie_armament aa
+        WHERE
+                aa.mil_eqp_armament_id_fk = armament_magazie_id
+            AND aa.dep_depozit_id_fk = magazie_depozit_id;
+
+    END;
+
+    UPDATE depozit dep
+    SET
+        dep.data_ultimei_achizitii = data_inc_achizitie + dur_zile_achizitie
+    WHERE
+        dep.depozit_id = magazie_depozit_id;
+
+END;

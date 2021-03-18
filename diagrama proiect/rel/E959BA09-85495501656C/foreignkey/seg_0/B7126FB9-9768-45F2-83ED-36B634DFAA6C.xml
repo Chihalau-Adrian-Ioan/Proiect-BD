@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B7126FB9-9768-45F2-83ED-36B634DFAA6C" containerWithKeyObject="CA4CA359-E9B4-9427-8349-985E80C226CC" localFKIndex="500C4E1E-E5D6-F189-2B63-09C85640BFD3" name="Folosire_arme_MIL_EQP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>4C55BA5C-2553-F547-0F30-EFBA017A3C07</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<referredTableLongName>ARMAMENT_MILITAR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8D83B964-3204-FD5F-8951-1446008BD221</referredTableID>
+<keyObject>49F0C2D9-CCE7-92D8-11DA-68A76B59776C</keyObject>
+<referredKeyID>49F0C2D9-CCE7-92D8-11DA-68A76B59776C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Armament_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

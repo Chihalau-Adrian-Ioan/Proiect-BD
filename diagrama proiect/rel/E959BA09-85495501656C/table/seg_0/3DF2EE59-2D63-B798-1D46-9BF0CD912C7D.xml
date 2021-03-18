@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DF2EE59-2D63-B798-1D46-9BF0CD912C7D" name="MAGAZIE">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>3E4071F0-68D3-D3C4-54AA-FB29CDC72412</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Magazie_ID" id="09502020-EAE1-E4DD-5DE3-532F628076F5">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>4E6BE5A0-852D-F36F-0CC1-EB79A95DFC03</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEP_Depozit_ID_FK" id="7F8DB33E-D51A-3BE9-DEEA-3ECDF9DD4B94">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>235EF961-726D-A769-04AA-0B39B0EEB200</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4974EA2C-700B-A7F2-A190-1CE6AF97994C" referredColumn="B71F8364-EABE-CC73-FDF7-314F133EF5C4"/>
+</associations>
+</Column>
+<Column name="Nr_maxim_arme" id="B71DA313-436C-3EC3-1681-0BFDF2C25CE0">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>FD19FEC2-C452-12A3-FA6F-5566B0468C76</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<constraintName>Maxim_non_0</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_maxim_arme!=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Arme_pastrate" id="4E0AF0F6-A497-1FDE-60A1-332BDE64D95D">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>DCB54513-1420-F596-B858-8317242B1355</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<constraintName>Nr_arme</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Arme_pastrate &lt;= Nr_maxim_arme"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIL_EQP_Armament_ID_FK" id="63E67F50-03CF-BE9A-6A96-786FB0FBCCC6">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>B39E8F05-8021-2EFB-F810-EC3951378F6A</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB85F5FB-EA8F-D7E0-0742-2FFB18A4F7C9" referredColumn="027CEB9B-79BD-ADD2-FD08-6DB633FB8402"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4B9C149-868A-D587-1D34-7710E4A40D00" name="MAGAZIE_PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>10CCFB24-0150-D6F3-72F5-BAB9CACB1F54</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09502020-EAE1-E4DD-5DE3-532F628076F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD7C1582-4DA4-7043-3B9D-6E2CE09DA3ED" name="MAGAZIE_MIL_EQP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>C03C9043-5244-FB7C-78C6-322A27B10206</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63E67F50-03CF-BE9A-6A96-786FB0FBCCC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A2AD2F8-3A07-8BFF-B475-731BEDCC6C4C" name="MAGAZIE_DEP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>4F7DEB5E-2B4F-9FFD-F892-088F42D321AB</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F8DB33E-D51A-3BE9-DEEA-3ECDF9DD4B94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

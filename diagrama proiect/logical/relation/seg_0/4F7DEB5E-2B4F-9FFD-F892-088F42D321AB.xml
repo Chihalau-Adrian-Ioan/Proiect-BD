@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pozitie_magazii" directorySegmentName="seg_0" id="4F7DEB5E-2B4F-9FFD-F892-088F42D321AB">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-01 18:59:51 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<sourcePk>2635885A-9B4D-4D6C-3CA7-2B3614BB5E91</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Format din</nameOnSource>
+<nameOnTarget>Aflat in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>976FF2F8-996A-CA5B-C3E9-35C34D73158F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3E4071F0-68D3-D3C4-54AA-FB29CDC72412</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

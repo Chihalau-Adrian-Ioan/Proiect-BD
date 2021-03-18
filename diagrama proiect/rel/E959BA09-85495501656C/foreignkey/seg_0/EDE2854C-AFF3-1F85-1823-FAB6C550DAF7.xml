@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EDE2854C-AFF3-1F85-1823-FAB6C550DAF7" containerWithKeyObject="EE905DF3-AED2-DC78-6248-30C263511BFE" localFKIndex="E174EE11-DC1F-D0ED-1A02-F53E14D6B850" name="ACHIZITIE_ARMAMENT_DEP_FK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-16 18:53:43 UTC</createdTime>
+<generatorID>2E4C347B-114C-A886-AEB5-80CB825D9A58</generatorID>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<referredTableLongName>DEPOZIT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9A61CE4E-7DCA-836D-E507-8ED97FAADEA3</referredTableID>
+<keyObject>03052C47-E8A1-C96B-859E-C37FF5FD20E5</keyObject>
+<referredKeyID>03052C47-E8A1-C96B-859E-C37FF5FD20E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Depozit_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

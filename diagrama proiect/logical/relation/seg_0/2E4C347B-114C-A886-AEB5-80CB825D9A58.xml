@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Achizitie_depozit" directorySegmentName="seg_0" id="2E4C347B-114C-A886-AEB5-80CB825D9A58">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-09 20:19:36 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<sourcePk>2635885A-9B4D-4D6C-3CA7-2B3614BB5E91</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Comanda prin</nameOnSource>
+<nameOnTarget>Comanda pentru</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>976FF2F8-996A-CA5B-C3E9-35C34D73158F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CF74AABA-050E-93A4-C14A-714513634486</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="976FF2F8-996A-CA5B-C3E9-35C34D73158F" name="DEPOZIT">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-21 11:01:33 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DEP</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Depozit_ID" id="D69D6927-FCD5-9948-849D-2991F4F2EC0F">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-21 11:01:41 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Locatie" id="DBB67265-F235-028F-5925-2452680E596C">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-03 10:29:10 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tip_depozitat" id="2942A0E1-548B-C5D4-50F9-04705E4871E0">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-06 10:14:32 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<constraintName>Tip_pastrat</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="AVION" description=""/>
+<valueDef value="CAMION" description=""/>
+<valueDef value="ECHIPAMENT_INFANTERIE" description=""/>
+<valueDef value="TANC" description=""/>
+<valueDef value="VEHICUL_BLINDAT" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Durata_livrarii_ore" id="A22B9258-3B6F-6425-8BC1-713F583FD58F">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-10 07:40:21 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Ultimei_Achizitii" id="8189B58B-A278-2344-C7EA-15CD68E7CC4A">
+<createdBy>chiha</createdBy>
+<createdTime>2020-12-10 07:28:02 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2635885A-9B4D-4D6C-3CA7-2B3614BB5E91" name="DEPOT PK">
+<createdBy>chiha</createdBy>
+<createdTime>2020-11-21 11:18:21 UTC</createdTime>
+<ownerDesignName>diagrama proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E959BA09-8693-AD79-6A7F-85495501656C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D69D6927-FCD5-9948-849D-2991F4F2EC0F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
